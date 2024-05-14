@@ -1,0 +1,41 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cuerpo-carta {
+    display: grid;
+    margin-top: 60px;
+}
+
+.cuerpo-carta input {
+    width: auto;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:focus::placeholder{
+        opacity: 0;
+    }
+
+}
+
+.cuerpo-carta button {
+    border: none;
+    margin-top: 1vh;
+    height: 5vh;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #1d4b69;
+    color: #ffffff;
+}

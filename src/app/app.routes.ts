@@ -5,6 +5,8 @@ import { GastosComponent } from './components/gastos/gastos.component';
 export const routes: Routes = [
 
     { path: 'ingresarPresupuesto', component: IngresarPresupuestoComponent },
-    { path: 'gastos', component: GastosComponent }
+    { path: 'gastos', component: GastosComponent },
+    { path: '', redirectTo: '/ingresarPresupuesto', pathMatch: 'full' },
+    { path: '**', redirectTo: '/ingresarPresupuesto', pathMatch: 'full' }
 
 ];
